@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: rgb(71, 71, 71) !important;
+}
+
+.card:hover {
+    border: solid 5px blanchedalmond;
+}

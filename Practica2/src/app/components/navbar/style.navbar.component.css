@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background: rgb(5, 4, 58);
+}
+
+#img {
+    height: auto;
+    margin-left: -10%;
+}
+
+a {
+    color: white;
+    margin-left: 25px;
+}
+
+#navbarSupportedContent {
+    margin-left: 10%;
+}

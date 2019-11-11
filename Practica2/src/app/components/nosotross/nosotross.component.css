@@ -1,0 +1,47 @@
+.caja-Nosotros {
+    width: 1007px;
+    height: auto;
+}
+
+h1 {
+    width: auto;
+    height: 50px;
+    text-align: left;
+    margin-top: 5%;
+    color: gray;
+    font-size: 50px;
+}
+
+.franja {
+    background: yellow;
+    width: 35%;
+    height: 10px;
+    margin-left: 0%;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+#text {
+    width: 100%;
+    background: white;
+    padding-left: 105px;
+    padding-right: 40px;
+}
+
+#imggrua {
+    background-image: url(./../../../assets/img/grua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-right: 15px;
+}
+
+#linea {
+    width: 1007px;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+}

@@ -1,0 +1,30 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-6">
+            <h1>*ngIf</h1>
+            <hr>
+            <p>Sirve para mostrar u ocultar bloques o elementos.</p>
+            <hr>
+            <div *ngIf="Mostrar" class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{Frase.mensaje}}</h5>
+                    <p class="card-text">{{Frase.autor}}</p>
+                </div>
+            </div>
+
+            <button (click)="MetodoCambiar()" class="btn btn-outline-primary btn-block"> Mostrar/Ocultar </button>
+
+        </div>
+        <div class="col-6">
+            <h1>*ngFor</h1>
+            <hr>
+            <p>Sirve para crear un ciclo.</p>
+            <hr>
+
+            <ul class="list-group">
+                <li *ngFor="let personaje of personajes; index as i" class="list-group-item"> {{i+1}} - {{personaje}}</li>
+            </ul>
+
+        </div>
+    </div>
+</div>

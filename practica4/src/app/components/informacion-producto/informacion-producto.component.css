@@ -1,0 +1,30 @@
+.nombre {
+    padding: 0%;
+}
+
+.regresar {
+    width: 100%;
+}
+
+button {
+    width: 150px;
+    margin-left: 85%;
+}
+
+.marvel {
+    width: 300px;
+}
+
+.dc {
+    width: 300px;
+}
+
+.bio p {
+    text-align: justify;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}

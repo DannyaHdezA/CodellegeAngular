@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-4">
+        <img [src]="Artist.images[1].url" class="img-thumbnail rounded-circle" alt="">
+    </div>
+    <div class="col-3">
+        <h6 class="text-light mt-2">ARTISTA</h6>
+        <h1 class="text-light mt-3">{{Artist.name}}</h1>
+        <h6 class="text-light mt-2">Popularidad {{Artist.popularity}} ranking</h6>
+    </div>
+    <div class="col-5 text-right">
+        <button type="button" class="btn btn-outline-success btn-lg"> Regresar</button>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr class="text-light text-center">
+                    <th>#</th>
+                    <th>Foto</th>
+                    <th>Canción</th>
+                    <th>Popularidad</th>
+                    <th>Preview</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-light text-center" *ngFor="let track of topTracks; let i= index">
+                    <td> {{i+1}}</td>
+                    <td> <img [src]="track.album.images[2].url" class="img-thumbnail rounded-circle" alt=""></td>
+                    <td>{{track.name}}</td>
+                    <td>{{track.popularity}}</td>
+                    <td><iframe [src]="track.uri|domSanatizer:'https://open.spotify.com/embed?uri='" width="300" height="80" frameborder="0"></iframe></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

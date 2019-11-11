@@ -1,0 +1,30 @@
+<div class="nombre">
+    <h1>{{HeroeFiltrado.nombre}}</h1>
+</div>
+<div class="regresar">
+    <button type="button" (click)="MandarAHeroes()" name="" id="" class="btn btn-primary btn-lg btn-block ">Regresar</button>
+
+</div>
+<div class="row mt-3">
+    <div class="col-6" id="imagen">
+        <img class="card-img-top" [src]="HeroeFiltrado.img" alt="Card image cap">
+    </div>
+    <div class="col-6" id="bio">
+        <div class="bio">
+            <p>
+                {{HeroeFiltrado.bio}}
+            </p>
+        </div>
+        <p>
+            <b>Fecha de aparición:</b> {{HeroeFiltrado.aparicion}}
+        </p>
+        <div class="foto">
+            <p *ngIf="HeroeFiltrado.casa=='DC'">
+                <img src="./../../../assets/img/dc.png" alt="" class="dc">
+            </p>
+            <p *ngIf="HeroeFiltrado.casa=='Marvel'">
+                <img src="./../../../assets/img/marvel.png" alt="" class="marvel">
+            </p>
+        </div>
+    </div>
+</div>
